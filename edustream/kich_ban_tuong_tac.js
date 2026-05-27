@@ -219,7 +219,7 @@ $(document).ready(function() {
 let dsAnh = [
     "asset/C++.jpg",
     "asset/python.jpg",
-    "asset/JS.PNG",
+    "asset/JS.jpg",
 ];
 
 let index = 0;
