@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduStream - Nền tảng học lập trình trực tuyến</title>
+    <link rel="stylesheet" href="giao_dien_trang_chu.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <header id="main-header">
+        <div class="container header-content">
+            <div class="logo" onclick="window.location.href='trang_chu.html'">EduStream</div>
+            <nav>
+
+                <div class="nav-item">
+                    <a data-target="#categories-section">Khóa học</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="danh_muc_khoa_hoc.html">Tất cả danh mục</a></li>
+                        <li><a href="#" data-target="#courses-section">Lập trình Web</a></li>
+                        <li><a href="#" data-target="#courses-section">Python & AI</a></li>
+                        <li><a href="#" data-target="#courses-section">Ứng dụng Di động</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-item">
+                    <a data-target="#path-section">Lộ trình</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="lo_trinh_hoc.html">Chi tiết lộ trình</a></li>
+                        <li><a href="#" data-target="#path-section">Frontend Developer</a></li>
+                        <li><a href="#" data-target="#path-section">Backend Developer</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-item">
+                    <a data-target="#teachers-section">Giảng viên</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="danh_sach_giang_vien.html">Đội ngũ giảng viên</a></li>
+                        <li><a href="#">Chuyên gia Web</a></li>
+                        <li><a href="#">Chuyên gia AI</a></li>
+                    </ul>
+                </div>
+                <div class="nav-item">
+                    <a data-target="#faq-section">Hỏi đáp</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="cau_hoi_thuong_gap.html">Trung tâm câu hỏi</a></li>
+                        <li><a href="#">Chính sách học viên</a></li>
+                        <li><a href="#">Thanh toán & Hoàn tiền</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" id="global-search-input" placeholder="Tìm khóa học, giáo viên...">
+                </div>
+
+                <div class="search-results-box" id="search-live-results">
+                </div>
+            </div>
+            
+            <div class="auth-buttons">
+                <button class="btn-login">Đăng nhập</button>
+                <button class="btn-register">Đăng ký</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h1>Học lập trình<br>Dễ dàng cùng EduStream</h1>
+                <p>Hàng nghìn khóa học chất lượng từ cơ bản đến nâng cao. Học mọi lúc, mọi nơi - Nâng tầm sự nghiệp của bạn.</p>
+                <div class="hero-actions">
+                    <button class="btn-primary" onclick="$('html, body').animate({scrollTop: $('#courses-section').offset().top - 80}, 600);">Khám phá ngay</button>
+                    <button class="btn-secondary" onclick="$('html, body').animate({scrollTop: $('#path-section').offset().top - 80}, 600);">Xem lộ trình</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img class="img" src="https://funix.edu.vn/wp-content/uploads/2023/05/cac-khoa-hoc-lap-trinh-co-ban-c-tai-funix.jpg" alt="Hero Image">
+        
+        </div>
+    </section>
+
+    <section class="categories container" id="categories-section">
+        <h2 class="section-title">Danh mục khóa học</h2>
+        <div class="category-grid">
+            <div class="category-item" onclick="window.location.href='danh_muc_khoa_hoc.html'"><div class="icon">🌐</div>Web Development</div>
+            <div class="category-item" onclick="window.location.href='danh_muc_khoa_hoc.html'"><div class="icon">🐍</div>Python</div>
+            <div class="category-item" onclick="window.location.href='danh_muc_khoa_hoc.html'"><div class="icon">☕</div>Java</div>
+            <div class="category-item" onclick="window.location.href='danh_muc_khoa_hoc.html'"><div class="icon">📱</div>Mobile</div>
+            <div class="category-item" onclick="window.location.href='danh_muc_khoa_hoc.html'"><div class="icon">🤖</div>AI / Data</div>
+            <div class="category-item" onclick="window.location.href='danh_muc_khoa_hoc.html'"><div class="icon">⚙️</div>Khác</div>
+        </div>
+    </section>
+
+    <section class="featured container" id="courses-section">
+        <div class="section-header">
+            <h2>Khóa học nổi bật</h2>
+            <a href="danh_muc_khoa_hoc.html" class="view-all">Xem tất cả &rarr;</a>
+        </div>
+        <div class="course-grid">
+            <div class="course-card" data-course-id="html-css-js">
+                <div class="course-img-placeholder">Code Web</div>
+                <div class="course-info">
+                    <span class="badge">Bestseller</span>
+                    <h3>Lập trình Web với HTML, CSS, JavaScript</h3>
+                    <p class="instructor">Nguyễn Văn A</p>
+                    <div class="rating">⭐ 4.8 (1200)</div>
+                    <div class="price">599.000đ <span class="old-price">799.000đ</span></div>
+                </div>
+            </div>
+            <div class="course-card" data-course-id="python-core">
+                <div class="course-img-placeholder">Python Base</div>
+                <div class="course-info">
+                    <h3>Python cơ bản cho người mới bắt đầu</h3>
+                    <p class="instructor">Trần Thị B</p>
+                    <div class="rating">⭐ 4.7 (980)</div>
+                    <div class="price">499.000đ <span class="old-price">1.000.000đ</span></div>
+                </div>
+            </div>
+            <div class="course-card" data-course-id="java-pro">
+                <div class="course-img-placeholder">Java Master</div>
+                <div class="course-info">
+                    <h3>Java thực chiến cho người đi làm</h3>
+                    <p class="instructor">Lê Văn C</p>
+                    <div class="rating">⭐ 4.6 (850)</div>
+                    <div class="price">699.000đ <span class="old-price">999.000đ</span></div>
+                </div>
+            </div>
+            <div class="course-card" data-course-id="reactjs-adv">
+                <div class="course-img-placeholder">React JS</div>
+                <div class="course-info">
+                    <h3>ReactJS từ cơ bản đến nâng cao</h3>
+                    <p class="instructor">Phạm Văn D</p>
+                    <div class="rating">⭐ 4.9 (760)</div>
+                    <div class="price">599.000đ <span class="old-price">899.000đ</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="learning-path container" id="path-section">
+         <div class="section-header">
+            <h2>Lộ trình học tối ưu</h2>
+            <a href="lo_trinh_hoc.html" class="view-all">Xem chi tiết lộ trình &rarr;</a>
+        </div>
+        <div class="path-steps">
+            <div class="step">Bắt đầu<br><small>Nhập môn lập trình</small></div>
+            <div class="step">Frontend<br><small>HTML, CSS, JS</small></div>
+            <div class="step">Backend<br><small>NodeJS, PHP</small></div>
+            <div class="step">Fullstack<br><small>Hoàn thiện dự án</small></div>
+            <div class="step">Nâng cao<br><small>DevOps, System</small></div>
+        </div>
+    </section>
+
+    <section class="teachers-section container" id="teachers-section">
+        <h2 class="section-title">Đội ngũ Giảng viên xuất sắc</h2>
+        <div class="teachers-grid">
+            <div class="teacher-card">
+                <div class="teacher-avatar-box">
+                    <img class="imgtc" src="asset/a1.png">
+                </div>
+                <h3>Nguyễn Thị A</h3>
+                <p style="color:#666; font-size:14px;">Chuyên gia Web Fullstack</p>
+            </div>
+            <div class="teacher-card">
+                <div class="teacher-avatar-box">
+                    <img class="imgtc" src="asset/a2.png">
+                </div>
+                <h3>Trần Văn B</h3>
+                <p style="color:#666; font-size:14px;">Chuyên gia Khoa học dữ liệu</p>
+            </div>
+            <div class="teacher-card">
+                <div class="teacher-avatar-box">
+                    <img class="imgtc" src="asset/a3.png">
+                </div>
+                <h3>Lê Văn C</h3>
+                <p style="color:#666; font-size:14px;">Kiến trúc sư hệ thống Java</p>
+            </div>
+            <div class="teacher-card">
+                <div class="teacher-avatar-box">
+                    <img class="imgtc" src="asset/a4.png">
+                </div>
+                <h3>Phạm Thị D</h3>
+                <p style="color:#666; font-size:14px;">Kỹ sư phát triển Mobile App</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback container">
+        <h2 class="section-title">Học viên nói gì về EduStream</h2>
+        <div class="feedback-grid">
+            <div class="feedback-card">
+                <div class="user-info">
+                    <div class="user-avatar"></div>
+                    <div>
+                        <strong>Nguyễn Hoàng Nam</strong><br><small>Học viên</small>
+                    </div>
+                </div>
+                <p>Khóa học rất chất lượng, giảng viên nhiệt tình, dễ hiểu. Mình đã làm được project đầu tiên!</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="feedback-card">
+                <div class="user-info">
+                    <div class="user-avatar"></div>
+                    <div>
+                        <strong>Trần Minh Châu</strong><br><small>Học viên</small>
+                    </div>
+                </div>
+                <p>Nội dung bài giảng bám sát thực tế, website dễ sử dụng, hỗ trợ nhanh.</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section container" id="faq-section">
+        <h2 class="section-title">Hỏi đáp & Hỗ trợ kỹ thuật</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">Khóa học tại đây dành cho đối tượng nào? <span>▼</span></div>
+                <div class="faq-answer">Hệ thống bài giảng được thiết kế từ con số 0, cực kỳ thích hợp cho các bạn sinh viên CNTT, người mới bắt đầu hoặc người muốn đổi ngành sang lập trình.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Tôi có được hỗ trợ sửa lỗi code khi học không? <span>▼</span></div>
+                <div class="faq-answer">Có, EduStream cung cấp không gian hỏi đáp dưới mỗi bài học và kênh chat hỗ trợ 24/7 từ các cố vấn kỹ thuật và giảng viên.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Hình thức học là trực tuyến qua video hay live? <span>▼</span></div>
+                <div class="faq-answer">Các khóa học cốt lõi được thu hình chất lượng cao kèm hệ thống bài tập thực hành chấm điểm tự động, kết hợp với các buổi Livestream hỏi đáp định kỳ hàng tuần cùng giảng viên.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">EduStream</div>
+                <p>Nền tảng học lập trình trực tuyến chất lượng cao dành cho mọi người.</p>
+            </div>
+            <div class="footer-links">
+                <h4>VỀ EDUSTREAM</h4>
+                <ul>
+                    <li>Giới thiệu</li>
+                    <li>Liên hệ</li>
+                    <li>Tuyển dụng</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>HỖ TRỢ</h4>
+                <ul>
+                    <li>Trung tâm hỗ trợ</li>
+                    <li>Hướng dẫn thanh toán</li>
+                    <li>Chính sách hoàn tiền</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>KẾT NỐI</h4>
+                <p>Email: support@edustream.vn</p>
+                <p>Hotline: 0123 456 789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 EduStream. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="kich_ban_tuong_tac.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết khóa học - EduStream</title>
+    <link rel="stylesheet" href="giao_dien_chi_tiet.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container header-content">
+            <div class="logo" onclick="window.location.href='trang_chu.html'">EduStream</div>
+            <nav>
+                <div class="nav-item">
+                    <a href="trang_chu.html#categories-section" data-target="#categories-section">Khóa học</a>
+                </div>
+                <div class="nav-item">
+                    <a href="trang_chu.html#path-section" data-target="#path-section">Lộ trình</a>
+                </div>
+                <div class="nav-item">
+                    <a href="trang_chu.html#teachers-section" data-target="#teachers-section">Giảng viên</a>
+                </div>
+                <div class="nav-item">
+                    <a href="trang_chu.html#faq-section" data-target="#faq-section">Hỏi đáp</a>
+                </div>
+            </nav>
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" id="global-search-input" placeholder="Tìm khóa học, giáo viên...">
+                </div>
+                <div class="search-results-box" id="search-live-results"></div>
+            </div>
+            <div class="auth-buttons">
+                <button class="btn-login">Đăng nhập</button>
+                <button class="btn-register">Đăng ký</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="course-header-area">
+        <div class="container">
+            <h1 id="det-title">Lập trình Web với HTML, CSS, JavaScript</h1>
+            <p id="det-description">Làm chủ kỹ năng chuyên môn và xây dựng các dự án thực tế từ con số 0 cùng chuyên gia hàng đầu.</p>
+            <div class="course-meta-info">
+                <span>Giảng viên: <strong id="det-instructor">Nguyễn Văn A</strong></span>
+                <span>Đánh giá: ⭐ 4.8 (1.200 học viên)</span>
+                <span>Cập nhật mới nhất: 2026</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container course-detail-wrapper">
+        <div class="detail-grid">
+            
+            <div class="info-column">
+                <div class="content-section">
+                    <h2>Bạn sẽ học được gì?</h2>
+                    <ul id="det-benefits" style="padding-left: 20px;"></ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Nội dung khóa học</h2>
+                    <p><strong>Chương 1: Khởi động & Cài đặt môi trường</strong></p>
+                    <div class="curriculum-list">
+                        <div class="curriculum-item">
+                            <div class="lesson-title"><span>▶️</span> Bài 1: Giới thiệu tổng quan lộ trình</div>
+                            <button class="btn-style btn-preview">Học thử</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-column">
+                <div class="checkout-sidebar">
+                    <div class="sidebar-price-tag" id="det-price">599.000đ</div>
+                    <div class="sidebar-old-price" id="det-oldprice">799.000đ</div>
+                    <button class="btn-style btn-enroll-now">ĐĂNG KÝ HỌC NGAY</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">EduStream</div>
+                <p>Nền tảng học lập trình trực tuyến chất lượng cao dành cho mọi người.</p>
+            </div>
+            <div class="footer-links">
+                <h4>VỀ EDUSTREAM</h4>
+                <ul>
+                    <li>Giới thiệu</li>
+                    <li>Liên hệ</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="kich_ban_tuong_tac.js"></script>
+</body>
+</html>

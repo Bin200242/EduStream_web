@@ -1,0 +1,295 @@
+@import url('giao_dien_dung_chung.css');
+.course-detail-wrapper {
+    padding: 40px 0;
+}
+.course-header-area {
+    background-color: #0056B3;
+    color: white;
+    padding: 40px 0;
+    margin-bottom: 30px;
+    border-radius: var(--border-radius-base);
+}
+.course-header-area h1 {
+    color: white;
+    margin-bottom: 15px;
+}
+.course-meta-info {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    opacity: 0.9;
+}
+.detail-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+.curriculum-list {
+    margin-top: 15px;
+}
+.curriculum-item {
+    padding: 15px;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.curriculum-item:last-child {
+    border-bottom: none;
+}
+.lesson-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btn-preview {
+    background: #e1f5fe;
+    color: #0288d1;
+    font-size: 13px;
+    padding: 5px 12px;
+}
+.checkout-sidebar {
+    position: sticky;
+    top: 90px;
+    background: var(--color-white);
+    padding: 25px;
+    border-radius: var(--border-radius-base);
+    border: var(--border-style-base);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+.sidebar-price-tag {
+    font-size: 28px;
+    color: #007BFF;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.sidebar-old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.btn-enroll-now {
+    width: 100%;
+    background: #ff5722;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+.btn-enroll-now:hover {
+    background: #f4511e;
+}
+.course-features-list {
+    list-style: none;
+    margin-top: 20px;
+}
+.course-features-list li {
+    padding: 8px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+@import url('giao_dien_dung_chung.css');
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+#main-header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px; 
+    z-index: 9999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+body {
+    padding-top: 70px;
+}
+.course-detail-wrapper {
+    padding: 40px 0;
+}
+.course-header-area {
+    background-color: #0056B3;
+    color: white;
+    padding: 40px 0;
+    margin-bottom: 30px;
+    border-radius: var(--border-radius-base);
+}
+.course-header-area h1 {
+    color: white;
+    margin-bottom: 15px;
+}
+.course-meta-info {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    opacity: 0.9;
+}
+.detail-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+.curriculum-list {
+    margin-top: 15px;
+}
+.curriculum-item {
+    padding: 15px;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.curriculum-item:last-child {
+    border-bottom: none;
+}
+
+.lesson-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btn-preview {
+    background: #e1f5fe;
+    color: #0288d1;
+    font-size: 13px;
+    padding: 5px 12px;
+}
+.checkout-sidebar {
+    position: sticky;
+    top: 90px;
+    background: var(--color-white);
+    padding: 25px;
+    border-radius: var(--border-radius-base);
+    border: var(--border-style-base);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+.sidebar-price-tag {
+    font-size: 28px;
+    color: #007BFF;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.sidebar-old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.btn-enroll-now {
+    width: 100%;
+    background: #28a745;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 900px) {
+    html { font-size: 15px; }
+
+    .detail-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .checkout-sidebar {
+        position: static !important;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    html { font-size: 14px !important; }
+    body { padding-top: 155px !important; }
+
+    .course-header-area {
+        padding: 25px 15px !important;
+        text-align: center;
+    }
+    .course-meta-info {
+        flex-direction: column !important;
+        gap: 8px !important;
+        align-items: center;
+    }
+    .curriculum-item {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 10px !important;
+    }
+    .btn-preview {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    #main-header {
+        height: auto !important; 
+        padding: 8px 0 !important;
+    }
+
+    .header-content {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 6px !important;
+        align-items: center !important;
+        padding: 0 10px !important;
+    }
+
+    .logo {
+        font-size: 1.3rem !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    nav {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 2px !important;
+        width: 100% !important;
+    }
+
+    .nav-item > a {
+        padding: 4px 6px !important;
+        font-size: 0.72rem !important; 
+    }
+
+    .search-container {
+        width: 100% !important;
+        margin: 2px 0 !important;
+    }
+
+    .search-bar input {
+        width: 100% !important;
+        padding: 5px 12px !important;
+        font-size: 0.8rem !important;
+    }
+
+    .auth-buttons {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 8px !important;
+        width: 100% !important;
+    }
+
+    .auth-buttons button {
+        padding: 5px 12px !important;
+        font-size: 0.75rem !important;
+        flex: 1 !important;
+        max-width: 100px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-header-area h1 { font-size: 1.5rem !important; }
+    .sidebar-price-tag { font-size: 22px !important; }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lộ trình học chi tiết - EduStream</title>
+    <link rel="stylesheet" href="giao_dien_trang_chu.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container header-content">
+            <div class="logo" onclick="window.location.href='trang_chu.html'">EduStream</div>
+            <nav>
+                <div class="nav-item">
+                    <a href="trang_chu.html#categories-section">Khóa học</a>
+                </div>
+                <div class="nav-item">
+                    <a href="trang_chu.html#path-section">Lộ trình</a>
+                </div>
+                <div class="nav-item">
+                    <a href="trang_chu.html#teachers-section">Giảng viên</a>
+                </div>
+                <div class="nav-item">
+                    <a href="trang_chu.html#faq-section">Hỏi đáp</a>
+                </div>
+            </nav>
+            
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" id="global-search-input" placeholder="Tìm khóa học, giáo viên...">
+                </div>
+                <div class="search-results-box" id="search-live-results"></div>
+            </div>
+            
+            <div class="auth-buttons">
+                <button class="btn-login">Đăng nhập</button>
+                <button class="btn-register">Đăng ký</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container sub-page-wrapper" style="padding: 40px 15px;">
+        <h1 class="page-title-main">Hệ thống Lộ trình học (Learning Path)</h1>
+        <p style="margin-bottom: 30px;"><a href="trang_chu.html" style="color: #007BFF; font-weight: bold; text-decoration: none;">&larr; Quay lại Trang chủ</a></p>
+        
+        <div class="content-section">
+            <h2>Lộ trình Web Front-end Developer</h2>
+            <p>Thời gian dự kiến: 4-6 tháng. Học từ HTML/CSS đến JavaScript nâng cao, làm chủ ReactJS hoặc VueJS và tối ưu hóa UI/UX.</p>
+        </div>
+        <div class="content-section">
+            <h2>Lộ trình Backend Developer</h2>
+            <p>Thời gian dự kiến: 6 tháng. Tập trung xây dựng API, làm việc với Cơ sở dữ liệu (SQL, NoSQL), bảo mật phân quyền với Node.js, Java hoặc Python.</p>
+        </div>
+        <div class="content-section">
+            <h2>Lộ trình Khoa học dữ liệu & AI</h2>
+            <p>Thời gian dự kiến: 8 tháng. Học toán chuyên ngành, lập trình chuyên sâu Python, thư viện Pandas, Machine Learning và Deep Learning.</p>
+        </div>
+    </div>
+
+    <script src="kich_ban_tuong_tac.js"></script>
+</body>
+</html>
